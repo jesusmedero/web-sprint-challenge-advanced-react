@@ -23,6 +23,7 @@ export default class AppClass extends React.Component {
   getXY = () => {
     // It it not necessary to have a state to track the coordinates.
     // It's enough to know what index the "B" is at, to be able to calculate them.
+    return initialState
   }
 
   getXYMessage = () => {
@@ -39,19 +40,23 @@ export default class AppClass extends React.Component {
     // This helper takes a direction ("left", "up", etc) and calculates what the next index
     // of the "B" would be. If the move is impossible because we are at the edge of the grid,
     // this helper should return the current index unchanged.
+    return direction
   }
 
   move = (evt) => {
     // This event handler can use the helper above to obtain a new index for the "B",
     // and change any states accordingly.
+    return evt
   }
 
   onChange = (evt) => {
     // You will need this to update the value of the input.
+    return evt
   }
 
   onSubmit = (evt) => {
     // Use a POST request to send a payload to the server.
+    return evt
   }
 
   render() {
